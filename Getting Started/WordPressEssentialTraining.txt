@@ -1,0 +1,80 @@
+Launching a Wordpress Site
+- Launch from sitegrounds, it will build the site for you
+- to log into your site dashboard, enter the site URL into the address bar and add /wp-admin
+
+Creating User Accounts and Logging In 
+- Dashboard > Users > Add New
+- User Roles:
+    - Administrator: access to everything
+    - Editor: publish and manage all posts
+    - Author: publish and manage only their posts
+    - Contributor: write and manage own posts, but cannot publish them
+    - Subscriber: can only manage their own profile, cannot manage or publish content
+
+Updating WordPress Core
+- When WordPress updates to new version, you may have to manually update
+- Dashboard > Updates
+- Use the release notes to see what you might have to change
+
+Navigating the Main Menu
+- Posts: display pages in a blog or newsletter format
+- Users: people with access to the backend of the website
+
+Navigating the Dashboard Homepage
+- Site Health Status: tells you what to change or improve to increase site safety and performance
+
+Navigating the Settings Menu
+- Change the site title
+- Make sure the time zone is correct
+- Determine what your homepage displays
+- Discourage search engines from indexing the site (Settings > Reading > Search Engine Viability)
+
+Choosing and Managing Themes
+- Popular themes: GeneratePress, AstraWP, Neve, Divi...
+- Only download from WordPress or vetted sites like Elegant Themes, Woo Themes, or Template Monster.
+- Themes need to be updated as well
+- Before updating your theme...
+    - Make a full backup of your website
+    - Read the release notes
+    - Ensure you're using the right version of WordPress Core
+
+Featured Image
+- Different themes or changes in themes generate images weird sometimes
+- Download Regenerate Thumbnails plugin to fix this. Site will reconfigure images to display normally.
+
+Advanced Gutenberg Features
+- Patterns: pre-designed blocks that serve a purpose 
+
+Installing an SSL Certificate
+- Dashboard > Security > SSL Manager
+- Really Simple SSL Plugin: turn of Mixed Content Fixer and the plugin will sweep the entire site to make sure all URLs are using the proper encryption
+
+Making WordPress Backups
+- Cloud backups are best
+    - Won't be affected by server crashes or hacks
+    - Can be accessed anywhere
+    - Won't be damaged if computer is damaged
+    - Will probably have more available space
+- ManageWP: incremental cloud backups
+- UpdraftPlus: backup plugin
+
+Long-Term WordPress Security
+- Use secure hosting
+- Update software (plugins, themes, core) regularly
+- Implement two factor auth for login pages
+- Limit login attempts (Limit Login Attempts Reloaded plugin)
+- Set up a firewall (Wordfence, BlogVault, Securi)
+- Health Check & Troubleshooting plugin
+
+White Screen of Death?
+- Check error log (debug.log in wp-content folder), and it might tell you what theme or plugin is throwing the error
+- If you can't log in, rename the folder of the troublesome plugin/theme
+
+Theme Not Working?
+- Make sure the right theme is active
+- Make sure theme and core are updated
+- Disable plugins to see if something is affecting the theme
+- Refresh Permalinks (Settings > Permalinks) by clicking Save changes
+- Contact theme support
+
+
