@@ -10,3 +10,8 @@ Creating User Accounts and Logging In
     - Author: publish and manage only their posts
     - Contributor: write and manage own posts, but cannot publish them
     - Subscriber: can only manage their own profile, cannot manage or publish content
+
+Updating WordPress Core
+- When WordPress updates to new version, you may have to manually update
+- Dashboard > Updates
+- Use the release notes to see what you might have to change
