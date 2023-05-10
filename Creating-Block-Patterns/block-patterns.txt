@@ -1,0 +1,42 @@
+Creating Block Patterns in WordPress
+
+Block Patterns vs Reusable Blocks
+- Block Patterns are like templates that you can reuse and change the content of
+- Reusable blocks are blocks that are the same every time you use them, so if you make a change to the content of a block on one page, it'll change on all other pages
+- Reusable blocks can start from a block pattern, but not the other way arounf
+
+Adding Block Patterns to WordPress
+- Can be added as part of a theme or as a seperate plugin
+- If you want a block pattern to be used across multiple themes, plugin is the way to go
+- For inspiration, check out the Block Patterns Directory
+
+No Code Block Pattern Builder
+- BlockMeister plugin!
+- Limit use (dependancy)
+
+When Adding to Your Theme 
+- Create an /inc/ folder which stores a block-patterns.php file
+- In functions.php, use require_once to include the block-patterns.php file
+- Enqueue any pattern-specific CSS files
+
+Creating Each Pattern
+- Create the block patterns inside the block editor
+- Select all of the blocks that are part of the pattern and copy them 
+- Use a JSON encoder to convert the markup to a PHP-friendly format
+- Use the register_block_pattern function to register the block pattern
+- Save and repeat
+- Can also use register_block_pattern_category function to do exactly what it sounds like
+
+What is a JSON Encoder 
+- JSON encoding is a way of taking a block of text and removing/replacing characters that could cause our code to break
+- Mostly new lines and double quotes
+- jsonformatter.org/json-escape
+- Click on block in WordPress, Copy block, and paste code into formatter to get back PHP
+
+How to Style Block Patterns
+- Group all blocks together using Group, Columns, or even cover
+- Apply a custom CSS class to the entire Group (Block sidebar > Advanced > Additional CSS Classes)
+- Target group using .wp-block-group.[CSS-CLASS] (Customize > Additional CSS)
+
+Adding Custom Plugins & Patterns to WordPress
+- Compress into zip file, upload to plugins
