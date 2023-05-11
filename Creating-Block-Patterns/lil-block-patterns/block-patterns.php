@@ -27,11 +27,12 @@
 
 //   ENQUEUE STYLES
   function lil_bp_add_styles() {
-    wp_enqueue_styles('lil-bp-styles', LIL_BP_URL . 'inc/lil-bp-styles.css');
+    wp_enqueue_style('lil-bp-styles', LIL_BP_URL . 'inc/lil-bp-styles.css');
   };
 
-add_action('wp_enqueue_scripts', 'lil-bp-styles');
+add_action('wp_enqueue_scripts', 'lil_bp_add_styles');
 
-// GRAB PATTERNS
+// GRAB PATTERNS & CATEGORIES
+require_once('inc/categories.php');
 require_once('inc/patterns.php');
   

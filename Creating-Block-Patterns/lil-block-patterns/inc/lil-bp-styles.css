@@ -1,0 +1,30 @@
+.podcast {
+  background-color: teal;
+  padding: 100px;
+}
+
+.pricing-table .wp-block-column {
+  border: 1px solid black;
+}
+
+.pricing-table:where(.wp-block-columns.is-layout-flex) {
+  gap: 0;
+}
+
+.pricing-table .wp-block-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-table .wp-block-column ul li {
+  border-bottom: 1px solid black;
+  margin: 10px 40px;
+}
+
+.pricing-table .wp-block-column:nth-child(2) ul li {
+  border-color: white;
+}
+
+.pricing-table .wp-block-column .wp-block-buttons {
+  margin: 50px;
+}

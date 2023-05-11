@@ -40,3 +40,11 @@ How to Style Block Patterns
 
 Adding Custom Plugins & Patterns to WordPress
 - Compress into zip file, upload to plugins
+
+Forms in WP 
+- No form block in core 
+- Ninja Forms plugin!
+
+Content Upgrades
+- By default, forms will log in WPadmin and email the site admin.
+- Need to connect and ESP (MailChimp, ConvertKit) to deliver content upgrade which could cost extra
