@@ -46,3 +46,45 @@ Page Builder Plugins:
 Good Alt Text:
 - Assess what purpose the image serves on the page
 - Tell the user what it links to, what function it performs, or how it supports the written content
+
+ARIA Attributes to Know:
+- aria-expanded="true" (states whether content toggled by a button is currently visible)
+- aria-label (SR sees only the value of the attribute and ignores what's inside the tags)
+- aria-labelledby (similar to aria-label, but can accept ids of other elements as a value and use the values of those elements as part of the label)
+    - Also since you're not hardcoding the value, it can become dynamic when using things like Google translate on a web page, it'll read out the translated version which aria-label won't do
+- aria-describedby (add additional information to something that already has a label, so that the singular element can be understood out of context)
+- aria-live (lets SR know that a part of the page, empty by default, is expected to change without refresh and is to be monitored and read out upon change)
+    - polite: announcements of no particular urgency
+    - assertive: announcements needed immediately
+    - role= log, status, and alert are also designated as live
+
+Accessibility Toolbars and Overlays:
+- in general, don't use 'em plz
+
+Accessibility Plugins Worth Noting:
+- Contact Form 7: create your own accessible form
+- Contact Form 7: Accessible Defaults: adds a new interface with better template options which makes it easier to create an accessible form
+- Yoast SEO: scans written content for readability etc. and helps with developmental accessibility
+- WP Accessibility: enforces alt attributes
+- Access Monitor: test accessibility of content before publishing, will display a warning and prevent publishing if it's not accessible enough
+
+Accessible Content:
+- Avoid instructions that include relational positioning or color.
+- Write out the full abbreviation the first time it appears in your content
+- If using a word or passage in a different language than the rest of the content, must be specified with the lang attribute (srs use language pronunciation rules)
+- Watch for unnecessarily complex language
+- Center text alignment is hard on people with low vision (have to hunt for the beginning of each line)
+- Fully justified text is hard on people with dyslexia (rivers create motion and distract the user)
+
+Video and Audio:
+- Transcript: Written representation of everything on an audio file
+- Captions: Full aural descriptions of entire soundscape (for the hearing impaired)
+- Subtitles: Only spoken content (for people with auditory processing issues and language support)
+- Audio Description: Aural description of important things that are visually represented but never referenced vocally
+- Video Player: controls need accessible labels and must be operable from keyboard or with screen reader that updates when changes are made
+
+Underrate Semantic Content Tags:
+- <table> should not be used for layout, but are ideal for representation of data
+- <dl>, <dt>, <dd> are Description List, Description Term, and Description Definition elements
+- <figure> and <figcaption> to display content inline that is referred to or adds context to the rest of the content
+
