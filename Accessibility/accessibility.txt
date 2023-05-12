@@ -88,3 +88,8 @@ Underrate Semantic Content Tags:
 - <dl>, <dt>, <dd> are Description List, Description Term, and Description Definition elements
 - <figure> and <figcaption> to display content inline that is referred to or adds context to the rest of the content
 
+Usability Testing Phases:
+- Design Review 
+- Automated Testing (Tenon.io)
+- User Testing 
+- Assistive Technology (WAVE by WebAIM, Axe by Deque, Accessibility Bookmarklets)
