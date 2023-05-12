@@ -1,0 +1,48 @@
+Accessible Core
+- No theme can guarantee no accessibility issues
+- "Accessibility Ready" themes have taken steps to adhere to most WCAG standards, but still need to be assessed individually
+    - Theme guidelines provide instructions on how to test a theme for accessibility issues
+- Issue to be mindful of:
+    - Keyboard Navigation: every item can be reached from the keyboard with a visual indicator
+    - Controls: link buttons are constructed using appropriate HTML elements with clear indicators of what task they perform
+    - Skip Links: a means to skip over navigation is available
+    - Forms: native forms or replacements are accessible
+    - Headings: valid hierarchy
+    - ARIA Landmark Roles: all parts of the page are set within a landmark region to provide alternate nav access for SR
+    - Content Links: links are always underlined
+    - Repetitive Link Text: the same link text should not link to different documents
+    - Contrasts: colour combos are accessible
+    - Images: alt text available
+    - Media: does not autoplay or change without user interaction, has captions and transcripts
+    - SR Text: classes that hide text for sighted users but are still seen by SR are available
+    - Disallowed Attributes: positive tab index values, access key, and blank target attributes spawning new tabs (without clearly indicating so in the link) are not present in theme.
+
+Accessible Interfaces:
+- Plugins have their own CSS and can overwrite the focus accessibility from your theme
+
+Design and Color Contrast:
+- Interactive elements need to address all of the possible states: passive, focus, on hover?
+- Use contrast checker for colour palettes
+
+Accessible Navigation:
+- Ensure dropdowns activate on hover and focus
+- Adobe Accessible Mega Menu documentations illustrates how you can make complex menus keyboard friendly (arrow navigation to move between sections, esc to exit current panel, home and end for first and last option, etc.)
+
+Perceivable Images & Icons
+- Is the image decorative, content, or functional?
+- Ornamental svgs and icon fonts should have aria-hidden attribute to hide them from SRs, functional or content should have alt text or aria-label
+- If svg is functional or content but needs to be manipulated with CSS, make it an svg element with a role attribute of img
+
+Page Architecture & HTML Semantics:
+- Sidebar should be an Aside element
+- Wondering what should be the h1? Headings map add-on for Chrome.
+
+Page Builder Plugins:
+- Questions to ask when considering a page builder:
+    - Is the editor able to create accessible output?
+    - Does it encourage the creation of accessible output?
+    - Is the editor itself accessible to people with disabilities?
+
+Good Alt Text:
+- Assess what purpose the image serves on the page
+- Tell the user what it links to, what function it performs, or how it supports the written content
